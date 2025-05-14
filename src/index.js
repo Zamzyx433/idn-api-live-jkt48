@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use("/api", routes);
 
-app.get("/jkt48live", (req, res) => {
+app.get("/", (req, res) => {
   res.send({
     message: "Welcome To JKT48 Idn Live API",
   });
